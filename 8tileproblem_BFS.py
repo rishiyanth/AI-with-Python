@@ -25,8 +25,8 @@ def dfs(state,target,zero):
             possiblities.append((curr_x+1,curr_y))
         if (curr_y!=0):
             possiblities.append((curr_x,curr_y-1))
-        # if(curr_y!=2):
-        #     possiblities.append((curr_x,curr_y+1))
+        if(curr_y!=2):
+            possiblities.append((curr_x,curr_y+1))
         
         for pos in possiblities:
             new_x,new_y=pos[0],pos[1]
